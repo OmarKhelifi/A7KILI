@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "361005614686",
+    "project_id": "a7kili-a651b",
+    "storage_bucket": "a7kili-a651b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361005614686:android:7bfebf71c2efbdf814d6cf",
+        "android_client_info": {
+          "package_name": "com.example.a7kili"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6dGLqgsx5ppeWveQwTHDn_9oB4RrVcvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">A7kili</string>
+    <string name="create_new_account">create new account</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="welcome">Welcome</string>
+    <string name="sign_in_2">Sign In</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="add_image">Add Image</string>
+    <string name="select_user">Select User</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="online">Online</string>
+</resources>
