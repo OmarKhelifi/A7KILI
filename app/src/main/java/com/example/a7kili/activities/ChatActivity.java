@@ -1,9 +1,11 @@
 package com.example.a7kili.activities;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Base64;
+import android.util.Log;
 import android.view.View;
 
 import com.example.a7kili.adapters.ChatAdapter;
@@ -66,11 +68,19 @@ public class ChatActivity extends BaseActivity {
     private void loadReceiverDetails() {
         receiverUser = (User) getIntent().getSerializableExtra(Constants.KEY_USER);
         binding.textName.setText(receiverUser.name);
+        Log.d("ChatActivity", "Email in receiverUser: " + receiverUser.email);
+    }
+
+    private void infoActivity(){
+        Intent intent = new Intent(getApplicationContext(),infoUserActivity.class);
+        intent.putExtra(Constants.KEY_USER, receiverUser);
+        startActivity(intent);
     }
 
     private void setListeners() {
         binding.imageBack.setOnClickListener(v -> onBackPressed());
         binding.layoutSend.setOnClickListener(v -> sendMessage());
+        binding.imageInfo.setOnClickListener(v -> infoActivity());
     }
     private Bitmap getBitmapFromEncodedString(String encodedImage) {
         byte[] bytes = Base64.decode(encodedImage, Base64.DEFAULT);
